@@ -56,19 +56,13 @@ Visualization Manager:
         All Enabled: true
         base_link:
           Value: true
-        caster_wheel:
-          Value: true
         caster_wheel_link:
-          Value: true
-        chassis:
           Value: true
         chassis_link:
           Value: true
-        left_wheel:
-          Value: true
         left_wheel_link:
           Value: true
-        right_wheel:
+        odom:
           Value: true
         right_wheel_link:
           Value: true
@@ -78,13 +72,11 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          chassis:
-            caster_wheel:
-              {}
-          chassis_link:
-            caster_wheel_link:
-              {}
+        odom:
+          base_link:
+            chassis_link:
+              caster_wheel_link:
+                {}
             left_wheel_link:
               {}
             right_wheel_link:
@@ -187,7 +179,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.6558912396430969
+      Distance: 4.720954418182373
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -202,10 +194,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4202030599117279
+      Pitch: 0.735203206539154
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.45357972383499146
+      Yaw: 2.471764326095581
     Saved: ~
 Window Geometry:
   Displays:

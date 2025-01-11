@@ -19,6 +19,12 @@ def generate_launch_description():
         )]), launch_arguments={"use_sim_time": "true", "use_ros2_control": "true"}.items()
     )
 
+    # teleop_kbd = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource([os.path.join(
+    #         get_package_share_directory(pkg_name), 'launch', 'teleop_kbd.launch.py'
+    #     )]), launch_arguments={"use_sim_time": "true"}.items()
+    # )
+
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py'
@@ -46,6 +52,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         rsp, 
+        # teleop_kbd,
         gazebo, 
         spawn_entity,
         diff_drive_spawner,
